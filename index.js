@@ -21,6 +21,7 @@ function greet(time){
   {return "Good Afternoon";}
   else  if (lastTime>1700)
   {return "Good Evening";}
+//<<<<<<< HEAD
   else{return "TEST";}
 }
 /* Write your implementation of displayMessage() */
@@ -31,4 +32,14 @@ function displayMessage(message)
   
   let ms=document.getElementById("greeting");
   ms.innerHTML=message;
+//=======
+  else{return "Enter any Time";}
+}
+console.log(greet());
+/* Write your implementation of displayMessage() */
+function displayMessage(greet())
+{
+  let ms=document.getElementById("greeting");
+  ms.innerHTML=greet();
+>>>>>>> 33e9c4e220019f4fe54542d9902f5adfd6fa3943
 }

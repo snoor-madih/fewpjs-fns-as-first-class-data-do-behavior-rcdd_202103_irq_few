@@ -43,3 +43,18 @@
 //   ms.innerHTML=greet();
 // >>>>>>> 33e9c4e220019f4fe54542d9902f5adfd6fa3943
 // }
+
+function greet(timeStr){
+  let nowTime = timeStr.split(':');
+  let nowHour = parseInt(nowTime[0]);
+  if (nowHour<12){
+    return "Good Morning";
+  } else if (nowHour>17){
+    return "Good Evening";
+  }
+  return "Good Afternoon";
+}
+/* Write your implementation of displayMessage() */
+function displayMessage(msg){
+  document.getElementById("greeting").innerText = msg;
+}
